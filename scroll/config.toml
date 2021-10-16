@@ -1,4 +1,4 @@
-baseURL = "https://askoyol.org"
+baseURL = "https://askoyolweb.z16.web.core.windows.net"
 
 # This is a "one page"-website, so we do not need these kinds of pages...
 disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
