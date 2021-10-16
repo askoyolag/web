@@ -20,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.88.1'
+          hugo-version: 'latest'
           # extended: true
 
       - name: Build
@@ -28,10 +28,12 @@ jobs:
           cd scroll
           hugo --minify --destination ../public/
 
-        #- name: Deploy
-        #  uses: peaceiris/actions-gh-pages@v3
-        #  if: ${{ github.ref == 'refs/heads/main' }}
-        #  with:
-        #    github_token: ${{ secrets.GITHUB_TOKEN }}
-        #    publish_dir: ./public
+      - name: Publish
+				uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          source_dir: 'public'
+          container_name: '$web'
+          connection_string: ${{ secrets.ConnectionString }}
+          sync: true
 
