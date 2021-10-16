@@ -29,7 +29,7 @@ jobs:
           hugo --minify --destination ../public/
 
       - name: Publish
-				uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+        uses: bacongobbler/azure-blob-storage-upload@v1.2.0
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           source_dir: 'public'
