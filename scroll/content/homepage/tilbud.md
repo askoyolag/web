@@ -12,11 +12,15 @@ Askøy o-lag har et variert tilbud, om du vil ut på egenhånd i skogen, på en 
 
 Våre tilbud for medlemmer inkluderer et sosialt miljø der voksne og barn kan delta sammen eller individuelt. Trener og erfarne medlemmer veileder og er tilstede på treningsløp hver torsdag i sesongen. Vi drar også sammen på nærløp rundt Bergen på tirsdager og løp enkelte helger. O-laget satser på mosjons- og barneorientering, men har også medlemmer som kan veilede på et svært høyt nivå.
 
+![NoName](images/Samlingsplass.jpg)
+
 ---
 
 ## Turorientering
 
-På turorientering finner du poster i skogen på egenhånd, prøv gjerne våre to gratiskart for nybegynnere.
+{{< figure src="images/turorientering_logo_-_gronn_tur.png" height="150" >}}
+
+På turorientering finner du poster i skogen på egenhånd, prøv gjerne våre gratiskart for nybegynnere.
 
 Vanligvis starter tur-o-sesongen før påske og varer ut august, noen steder lenger.
 
@@ -25,6 +29,8 @@ Mer informasjon på [websidene](https://turorientering.no/askoy/).
 ---
 
 ## Stolpejakten
+
+{{< figure src="images/stolpejakten.png" height="150" >}}
 
 Stolpejakten er et lavterskeltilbud hvor man bruker en gratis mobil-app til å registrere besøk på stolper plassert ut i nærområdene der folk bor.
 
@@ -35,6 +41,8 @@ Mer informasjon på [websidene](https://stolpejakten.no/arrangor/askoy).
 ---
 
 ## Askøy på langs
+
+{{< figure src="images/APL.png" width="150">}}
 
 Askøy på langs er et samarbeidsprosjekt med Ask Friidrett og Askøy Turlag der man vedlikeholder en rute fra Kleppestø til Herdla, for det meste i skog.
 
