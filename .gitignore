@@ -1,6 +1,7 @@
 # hugo rendered
 public
 
+.DS_Store
 
 # Logs
 logs
