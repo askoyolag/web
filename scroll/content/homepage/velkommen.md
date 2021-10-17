@@ -9,4 +9,4 @@ Våre sponsorer:
 
 ![Handelsbanken](images/HB_LARGE_RGB.png)
 
-NoName
+![NoName](images/noname.jpg)
