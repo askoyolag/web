@@ -4,7 +4,7 @@ weight: 3
 header_menu: true
 ---
 
-![AOL-logo](images/aolMerket2021tr.png)
+<img src="images/aolMerket2021tr.png" width="100" height="100" />
 
 ##### En kort historie
 

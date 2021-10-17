@@ -39,3 +39,9 @@ title = "Askøy orienteringslag"
 
     [params.meta]
         keywords = "Askøy orienteringslag, askoyol, askoyolag, olaget, o-laget, stolpejakten askøy, turorientering askøy, askøy, askøy på langs, APL, askoy pa langs"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
