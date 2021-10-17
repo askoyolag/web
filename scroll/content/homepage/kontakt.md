@@ -8,6 +8,6 @@ header_menu: true
 
 {{<icon class="fa fa-phone">}}&nbsp;[+47 91614343](tel:+4791614343)
 
-[Facebook@askoyolag](https://www.facebook.com/askoyolag)
+{{<icon class="fa fa-facebook">}}&nbsp;[@askoyolag](https://www.facebook.com/askoyolag)
 
 Ta gjerne kontakt!
