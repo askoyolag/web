@@ -11,4 +11,4 @@ Våre sponsorer:
 
 ![Handelsbanken](images/HB_LARGE_RGB.png)
 
-![NoName](images/noname.jpg)
+![NoName](images/noname.png)
