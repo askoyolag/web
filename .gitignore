@@ -1,7 +1,22 @@
 # hugo rendered
 public
+/resources/_gen
+/assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
 
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Source files (GIMP, etc.)
+*.xcf
 
 # Logs
 logs
