@@ -1,15 +1,10 @@
 name: pages
 
-# NOTE: kept manual-only for now. This repo is private and GitHub Pages on a
-# private repo needs GitHub Team/Enterprise (org is currently on Free,
-# GitHub for Nonprofits upgrade is pending). Once that lands and Pages is
-# enabled for this repo (Settings > Pages > Source: GitHub Actions), swap the
-# `workflow_dispatch` trigger below for the commented-out `push` trigger.
 on:
   workflow_dispatch: {}
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
