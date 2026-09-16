@@ -78,3 +78,9 @@
   sizes="16x16"
   href="{{ "images/favicon-16x16.png" | absURL }}"
 />
+
+<!-- Klubbfarger (se scroll/assets/css/klubbfarger.css) -->
+{{ with resources.Get "css/klubbfarger.css" }}
+  {{ $css := . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+{{ end }}

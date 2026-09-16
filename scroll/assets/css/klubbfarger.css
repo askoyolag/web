@@ -1,0 +1,78 @@
+/*
+ * Askøy orienteringslag - klubbfarger.
+ *
+ * Dette er et prosjektfilnivå-tillegg, ikke en endring av temaet
+ * (scroll/themes/hugo-scroll). Det lastes inn via scroll/layouts/partials/custom_head.html,
+ * som er temaets offisielle overstyringspunkt, og overstyrer temaets egne
+ * CSS-variabler (definert i scroll/themes/hugo-scroll/assets/css/variables.scss)
+ * fordi denne filen lastes etter temaets stilark i <head>.
+ *
+ * Kontrast er sjekket mot WCAG AA (normal tekst >= 4.5:1, stor tekst/UI >= 3:1):
+ *  - Grønn overskriftstekst på lys bakgrunn:        ~7.0:1
+ *  - Hvit/krem tekst på grønt seksjonsbånd:          ~7.0:1
+ *  - Eksisterende lys footer-tekst på grønn footer:  ~4.6:1
+ *  - Hvit knappetekst på rød knapp:                  ~4.8:1
+ *  - Hvit tekst på marineblå flate (knapp-hover):    ~14:1
+ *  - Rødt på grønt seksjonsbånd/footer er derimot bare ~1.7:1 og brukes
+ *    IKKE til tekst der - se overstyringen lenger ned.
+ */
+
+:root {
+  /* Klubbfarger */
+  --aol-gronn: #1e5b3a;
+  --aol-rod: #e40038;
+  --aol-marine: #032e49;
+
+  /* Cover-tittel og ingress over toppbildet.
+     Bildet inneholder mye grønt/naturtoner, så grønn tekst ville i
+     praksis fått for lav og ujevn kontrast avhengig av hvor i bildet
+     den havner. Marine er mørkere og skiller seg tydeligere ut. */
+  --cover-text-color: var(--aol-marine);
+
+  /* Knapper: rød bunnfarge i hvile, hvit tekst. */
+  --highlight: var(--aol-rod);
+  --highlight-contrast: #fff;
+  /* Knapper ved hover: mørk marineflate, hvit tekst. */
+  --highlight-inverse: var(--aol-marine);
+  --highlight-inverse-contrast: #fff;
+
+  /* Lenker/navigasjon ved hover, i lyse seksjoner: rødt. */
+  --sticky-menu-text-color: var(--aol-rod);
+
+  /* Seksjonsbånd (alternerende mørk bakgrunn mellom seksjonene): grønt. */
+  --section-dark-bg-color: var(--aol-gronn);
+
+  /* Footer: grønn bunnfarge (eksisterende lys footer-tekst har god kontrast mot den). */
+  --footer-color-background: var(--aol-gronn);
+}
+
+/* Rød hover-tekst på grønn bunn (seksjonsbånd/footer) gir for lav kontrast
+   (~1.7:1). Bruk samme lyse krembakgrunnsfarge som resten av siden i stedet,
+   slik at hover fortsatt er godt synlig der (~7:1). */
+.post-holder.dark,
+.site-footer {
+  --sticky-menu-text-color: var(--section-light-bg-color);
+}
+
+/* Overskrifter i innholdet: grønt. */
+.post-title,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  color: var(--aol-gronn);
+}
+
+/* På det grønne seksjonsbåndet ville grønne overskrifter blitt usynlige mot
+   bakgrunnen - bruk samme lyse tekstfarge som resten av teksten der. */
+.post-holder.dark .post-title,
+.post-holder.dark .post-content h1,
+.post-holder.dark .post-content h2,
+.post-holder.dark .post-content h3,
+.post-holder.dark .post-content h4,
+.post-holder.dark .post-content h5,
+.post-holder.dark .post-content h6 {
+  color: var(--section-dark-text-color);
+}
